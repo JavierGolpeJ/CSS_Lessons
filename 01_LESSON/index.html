@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="author" content="Javier Golpe Juarez">
-        <meta name="description" content="This is a practice website">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Javier Golpe Juarez">
+    <meta name="description" content="This is a practice website">
 
-        <title>Practice 1</title>
-        <link rel="icon" href="html-5-2.png" type="image/x-icon">
-        <link rel="stylesheet" href="main.css">
-    </head>
+    <title>Practice 1</title>
+    <link rel="icon" href="html-5-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
 
-    <body>
-        <h1>Hello Website 1</h1>
+<body>
+    <h1>Hello Website 1</h1>
 
-        <hr> <!-- Horizontal Rule -->
-
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="#html">Learning HTML</a></li>
+            <li><a href="#vacation">Planing a Vacation</a></li>
+        </ul>
+    </nav>
+    <hr> <!-- Horizontal Rule -->
+    <section id="html">
         <h2>Ready to learn HTML</h2>
         <p>This is a paragraph
             <br>&nbsp;&nbsp;this is a line break inside of a p tag
@@ -23,19 +30,29 @@
             <br>... and this
         </p>
 
-        <h3>Scheduling</h3>
-        <p>This is a paragrap...</p>
+        <p>Let me tell you how: </p>
+        <ol>
+            <li>...I learn more about web dev.</li>
+            <li>...I plan out my schedule.</li>
+            <li>...I use resources from <abbr title="Mozilla Developer Network"><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a></abbr>.</li>
+        </ol>
+    </section>
+    <hr>
 
-        <hr>
-
+    <section id="vacation">
         <h2>Vacation planning</h2>
         <p>havent been on <em>a vacation in a while...</em></p>
 
         <h3>Places id like to visit</h3>
         <ul>
-            <li><p>i need to go to <strong>Spain soon</strong></p></li>
-            <li><p>i need to go to a UCL game</p>
-                <address>Barcelona, Spain</address></li>
+            <li>
+                <p>i need to go to <strong>Spain soon</strong></p>
+            </li>
+            <li>
+                <p>i need to go to a UCL game</p>
+                <address>Barcelona, Spain</address>
+            </li>
         </ul>
 
         <h3>Places i need to avoid</h3>
@@ -47,26 +64,35 @@
             <dt>Amsterdam</dt>
             <dd>too many tourists</dd>
         </dl>
-        
-        <hr>
-        &lt;&lt;&lt; &copy; Javier Golpe &gt;&gt;&gt;
-        <hr>
+    </section>
 
-        <h3>Time to make a lsit</h3>
+    <hr>
+    &lt;&lt;&lt; &copy; <a href="about.html">Javier Golpe</a> &gt;&gt;&gt;
+    <hr>
 
-        <p>Here is a unordered list of things i need to do:</p>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
+    <h3>Time to make a lsit</h3>
 
-        <p>Here is a ordered list of things i need to do:</p>
-        <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
-    </body>
-        
+    <p>Here is a unordered list of things i need to do:</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <p>Here is a ordered list of things i need to do:</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <hr>
+    <ul>
+        <li>Open <a href="https://www.google.com" target="_blank">Google</a> in a new tab. </li>
+    </ul>
+    <hr>
+
+    <p> <a href="#">Back to Top</a> </p>
+</body>
+
 </html>
