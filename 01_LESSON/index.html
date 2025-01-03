@@ -15,7 +15,7 @@
     <header>
         <h1>Hello Website 1</h1>
 
-        <nav aria-lable="Primary-Navigation">
+        <nav aria-label="primary-navigation">
             <ul>
                 <li><a href="#html">Learning HTML</a></li>
                 <li><a href="#vacation">Planing a Vacation</a></li>
@@ -62,6 +62,57 @@
                         <p>I start at <time datetime="08:00">8 am</time> and i write code for 2 hours every morning</p>
                     </details>
                 </aside>
+                <br>
+
+                <!-- scope in this is used to help assistive technology navigate the website  -->
+                <table>
+                    <caption>My Daily Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td>
+                                <time datetime="08:00">8am</time>-<time datetime="10:00">11am</time>
+                            </td>
+                            <td>Write Code</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Break</th>
+                            <td>
+                                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                            </td>
+                            <td>Eat Lunch</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Afternoon</th>
+                            <td>
+                                <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                            </td>
+                            <td>Study for Other Courses</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Evening</th>
+                            <td rowspan="2">All Other Times</td>
+                            <td>Free Time</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Night</th>
+                            <td>Sleep</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">This is what i do from day to day</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </section>
         </article>
         <hr>
@@ -106,7 +157,7 @@
                 </ul>
             </section>
 
-            
+
             <section>
                 <h3>Places i need to avoid</h3>
                 <dl>
