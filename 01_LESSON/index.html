@@ -12,94 +12,120 @@
 </head>
 
 <body>
-    <h1>Hello Website 1</h1>
+    <header>
+        <h1>Hello Website 1</h1>
 
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="#html">Learning HTML</a></li>
-            <li><a href="#vacation">Planing a Vacation</a></li>
-        </ul>
-    </nav>
+        <nav aria-lable="Primary-Navigation">
+            <ul>
+                <li><a href="#html">Learning HTML</a></li>
+                <li><a href="#vacation">Planing a Vacation</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <hr> <!-- Horizontal Rule -->
-    <section id="html">
-        <h2>Ready to learn HTML</h2>
-        <img src="img/HTML5_Logo_256.png" alt="HTML5 Logo" title="I am learning HTML5 Logo" width="256" 
-        height="256">
-        <figure>
-            <figcaption>An Example of HTML5 code</figcaption>
-            <p>
-                <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
-            </p>
-        </figure>
-        <p>This is a my first website...
-            <br>&nbsp;&nbsp;this is a line break inside of a p tag
-            <br>&nbsp;&nbsp;&nbsp;just lets you know that you can do this
-            <br>... and this
-        </p>
+    <!-- can only have one main per page -->
+    <main>
+        <!-- article used for a clear topic while section is used for univeral reasons -->
+        <article id="html">
+            <h2>Ready to learn HTML</h2>
+            <p>Building a website is great work</p>
+            <section>
+                <h3>HTML5</h3>
+                <img src="img/HTML5_Logo_256.png" alt="HTML5 Logo" title="I am learning HTML5 Logo" width="256"
+                    height="256">
+                <figure>
+                    <figcaption>An Example of HTML5 code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+                    </p>
+                    <p>This is a my first website...
+                        <br>&nbsp;&nbsp;this is a line break inside of a p tag
+                        <br>&nbsp;&nbsp;&nbsp;just lets you know that you can do this
+                        <br>... and this
+                    </p>
+                </figure>
+            </section>
 
+            <section>
+                <h3>My Daily Schedule</h3>
+                <p>Let me tell you how: </p>
+                <ol>
+                    <li>...I learn more about web dev.</li>
+                    <li>...I plan out my schedule.</li>
+                    <li>...I use resources from <abbr title="Mozilla Developer Network"><a
+                                href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a></abbr>.</li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>Guess the <mark>number of hours</mark> i code per day</summary>
+                        <p>I start at <time datetime="08:00">8 am</time> and i write code for 2 hours every morning</p>
+                    </details>
+                </aside>
+            </section>
+        </article>
+        <hr>
 
-        <p>Let me tell you how: </p>
-        <ol>
-            <li>...I learn more about web dev.</li>
-            <li>...I plan out my schedule.</li>
-            <li>...I use resources from <abbr title="Mozilla Developer Network"><a
-                        href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a></abbr>.</li>
-        </ol>
-    </section>
-    <hr>
+        <article id="vacation">
+            <h2>Vacation planning</h2>
+            <p>havent been on <em>a vacation in a while...</em></p>
 
-    <section id="vacation">
-        <h2>Vacation planning</h2>
-        <p>havent been on <em>a vacation in a while...</em></p>
-
-        <h3>Places id like to visit</h3>
-        <ul>
-            <li>
-                <!-- When a photo is under the fold(not visible when opening the website) 
+            <section>
+                <h3>Places id like to visit</h3>
+                <ul>
+                    <li>
+                        <!-- When a photo is under the fold(not visible when opening the website) 
                  you should set loading to lazy it makes the website load faster-->
-                <p>i want to visit the caribean beaches</p>
-                <figure>
-                    <img src="img/caribbean.jpg" alt="Caribean Beaches" title="Caribean Beaches" width="612" 
-                    height="300" loading="lazy">
-                    <figcaption>Caribean Beaches</figcaption>
-                </figure>
-            </li>
-            <li>
-                <p>i need to go to <strong>Japan</strong></p>
-                <figure>
-                    <img src="img/tokyo-skyline-fuji.jpg" alt="Japan Tokyo City Skyline Fuji" title="Japan" width="612" 
-                    height="300" loading="lazy">
-                    <figcaption>Tokyo City Skyline Fuji</figcaption>
-                </figure>
-            </li>
-            <li>
-                <p>i need to go to <strong>Spain soon</strong></p>
-            </li>
-            <li>
-                <p>i need to go to a UCL game</p>
-                <address>Barcelona, Spain</address>
-                <figure>
-                    <img src="img/barcelona.webp" alt="Barcelona" title="Barcelona City view" width="612"
-                    height="300" loading="lazy">
-                    <figcaption>Barcelona City view</figcaption>
-                </figure>
-            </li>
-        </ul>
+                        <p>i want to visit the caribean beaches</p>
+                        <figure>
+                            <img src="img/caribbean.jpg" alt="Caribean Beaches" title="Caribean Beaches" width="612"
+                                height="300" loading="lazy">
+                            <figcaption>Caribean Beaches</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>i need to go to <strong>Japan</strong></p>
+                        <figure>
+                            <img src="img/tokyo-skyline-fuji.jpg" alt="Japan Tokyo City Skyline Fuji" title="Japan"
+                                width="612" height="300" loading="lazy">
+                            <figcaption>Tokyo City Skyline Fuji</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>i need to go to <strong>Spain soon</strong></p>
+                    </li>
+                    <li>
+                        <p>i need to go to a UCL game</p>
+                        <address>Barcelona, Spain</address>
+                        <figure>
+                            <img src="img/barcelona.webp" alt="Barcelona" title="Barcelona City view" width="612"
+                                height="300" loading="lazy">
+                            <figcaption>Barcelona City view</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
 
-        <h3>Places i need to avoid</h3>
-        <dl>
-            <dt>Paris</dt>
-            <dd>too many <strong>tourists</strong></dd>
-            <dt>London</dt>
-            <dd>too many tourists</dd>
-            <dt>Amsterdam</dt>
-            <dd>too many tourists</dd>
-        </dl>
-    </section>
-
+            
+            <section>
+                <h3>Places i need to avoid</h3>
+                <dl>
+                    <dt>Paris</dt>
+                    <dd>too many <strong>tourists</strong></dd>
+                    <dt>London</dt>
+                    <dd>too many tourists</dd>
+                    <dt>Amsterdam</dt>
+                    <dd>too many tourists</dd>
+                </dl>
+            </section>
+        </article>
+    </main>
     <hr>
-    &lt;&lt;&lt; &copy; <a href="about.html">Javier Golpe</a> &gt;&gt;&gt;
+    <!-- there can be multiple headers and footers -->
+    <footer>
+        <p>&lt;&lt;&lt; &copy; <a href="about.html">Javier Golpe</a> &gt;&gt;&gt;</p>
+        <p> <a href="#">Back to Top</a> </p>
+    </footer>
     <hr>
 
     <h3>Time to make a lsit</h3>
@@ -124,7 +150,7 @@
     </ul>
     <hr>
 
-    <p> <a href="#">Back to Top</a> </p>
+
 </body>
 
 </html>
