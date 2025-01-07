@@ -1,3 +1,10 @@
+/* importing fonts */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
 /* selectors */
 /* html {
     font-size: 16px;
@@ -72,21 +79,20 @@ p{
 
 /* Box Models */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-.container {
+/* .container {
     border: 10px outset red;
-    /* border-top-color: blue; */
     font-size: 1.5rem;
     margin: 1.5em;
     padding: 1.5em;
-}
+} */
 
-.circle {
+/* .circle {
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -96,4 +102,21 @@ p{
     outline-offset: .25rem;
     margin: 1em auto;
 
+} */
+
+/* Typography */
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: -apple-system, sans-serif;
+}
+
+/* input, button {
+    font: inherit;
+} */
+
+
+p {
+    line-height: 1.5;
 }
