@@ -43,7 +43,7 @@ article {
 
 /* Units and sizing  */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -67,4 +67,33 @@ body {
 p{
     font-size: 1.2rem;
     width: 40ch;
+} */
+
+
+/* Box Models */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 10px outset red;
+    /* border-top-color: blue; */
+    font-size: 1.5rem;
+    margin: 1.5em;
+    padding: 1.5em;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border: 2px solid #0a1128;
+    outline: 2px solid red;
+    outline-offset: .25rem;
+    margin: 1em auto;
+
 }
