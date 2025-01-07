@@ -1,5 +1,5 @@
 /* selectors */
-html {
+/* html {
     font-size: 16px;
 }
 
@@ -11,10 +11,10 @@ h1 {
 
 .gray {
     color: gray;
-}
+} */
 
 /* try not to use ids for css */
-#second {
+/* #second {
     font-style: italic;
 }
 
@@ -29,4 +29,14 @@ h2, h3 {
 
 p {
     color: red;
+} */
+
+/* colors */
+
+body {
+    background: #ECE2D0;
+}
+
+article {
+    color: #0a1128;
 }
