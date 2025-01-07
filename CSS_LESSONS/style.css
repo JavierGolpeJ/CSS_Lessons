@@ -34,9 +34,37 @@ p {
 /* colors */
 
 body {
-    background: #ECE2D0;
+    background: rgb(236, 226, 208);
 }
 
 article {
     color: #0a1128;
+}
+
+/* Units and sizing  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 75%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+main {
+    font-size: 2rem;
+}
+
+body {
+    width: 100vw;
+}
+
+p{
+    font-size: 1.2rem;
+    width: 40ch;
 }
