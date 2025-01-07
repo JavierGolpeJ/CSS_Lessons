@@ -1,0 +1,32 @@
+/* selectors */
+html {
+    font-size: 16px;
+}
+
+
+h1 {
+    font-size: 64px;
+    color: purple;
+}
+
+.gray {
+    color: gray;
+}
+
+/* try not to use ids for css */
+#second {
+    font-style: italic;
+}
+
+h2, h3 {
+    color: blue;
+}
+
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+p {
+    color: red;
+}
