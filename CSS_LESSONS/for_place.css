@@ -1,0 +1,29 @@
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: -apple-system, sans-serif;
+}
+
+ol {
+    list-style-type:lower-alpha;
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: #00f;
+    line-height: 1.6;
+    /* list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif');
+    list-style: square url('https://www.w3schools.com/cssref/sqpurple.gif')  inside; */
+}
+
+ul li:nth-child(odd) {
+    color: #f00;
+}
+
+ul::marker {
+    color :red;
+    font-family: monospace;
+    font-size: 1em;
+}
